@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Josée cuisine Thermomix</title>
+  <meta name="description" content="Blog recettes Thermomix par Josée — recettes testées, temps Thermomix, astuces et pas à pas." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-grid">
+    <a class="brand" href="index.html">
+      <img src="https://picsum.photos/seed/logo/80/80" alt="Logo Josée cuisine" class="brand-logo">
+      <div>
+        <h1>Josée cuisine Thermomix</h1>
+        <p class="tagline">Recettes testées & adaptées pour Thermomix</p>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#recettes">Recettes</a>
+      <a href="recette.html?slug=veloute-courge-ananas">Exemple recette</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <h2>Bienvenue dans ma cuisine Thermomix</h2>
+      <p>Des recettes claires, temps et vitesses indiqués, astuces et variantes pour réussir avec ton robot.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#recettes">Voir les recettes</a>
+        <a class="btn" href="#apropos">En savoir plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recherche et filtres -->
+  <section class="wrap search-area" id="recettes">
+    <div class="filters">
+      <input id="search" type="search" placeholder="Rechercher une recette, ingrédient..." aria-label="Recherche recettes">
+      <select id="categoryFilter" aria-label="Filtrer par catégorie">
+        <option value="all">Toutes catégories</option>
+        <option value="entree">Entrée</option>
+        <option value="plat">Plat</option>
+        <option value="dessert">Dessert</option>
+        <option value="boisson">Boisson</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Liste recettes -->
+  <section class="wrap cards-grid" id="recipesList" aria-live="polite">
+    <!-- Les cartes sont injectées par script.js -->
+  </section>
+
+  <!-- À propos -->
+  <section class="wrap about" id="apropos">
+    <div class="about-grid">
+      <div>
+        <h3>À propos — Josée</h3>
+        <p>Je suis passionnée par la cuisine simple et efficace avec le Thermomix. Ici, tu trouveras des recettes testées, détaillées, et prêtes à être exécutées sur ton robot.</p>
+        <ul>
+          <li>Format recette : ingrédients, préparation, temps Thermomix (vitesse, température), variantes</li>
+          <li>Photos pas-à-pas</li>
+          <li>Conseils pour adapter les quantités</li>
+        </ul>
+      </div>
+      <img src="https://picsum.photos/seed/josee/500/350" alt="Photo Josée cuisine" class="about-img">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="wrap contact" id="contact">
+    <h3>Contact</h3>
+    <p>Une question, une suggestion de recette ? Écris-moi via ce formulaire (test local — il faut brancher un backend pour envoyer réellement).</p>
+    <form id="contactForm" onsubmit="event.preventDefault(); alert('Formulaire envoyé (simulation)');">
+      <div class="form-row">
+        <label for="name">Nom</label>
+        <input id="name" type="text" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Courriel</label>
+        <input id="email" type="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+      </div>
+      <button class="btn primary" type="submit">Envoyer</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <strong>Josée cuisine Thermomix</strong>
+      <p>© <span id="year"></span> — Tous droits réservés</p>
+    </div>
+    <nav class="socials" aria-label="Liens sociaux">
+      <a href="#" title="Instagram">Instagram</a>
+      <a href="#" title="Facebook">Facebook</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
+
+
+
+
